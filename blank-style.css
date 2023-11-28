@@ -1,0 +1,20 @@
+body {
+	background-color: LightGreen;
+}
+
+#home {
+	color: red;
+}
+.text-box {
+	display: inline-block;
+	width: 200px;
+}
+
+.dog {
+	width: 80px;
+}
+
+p {
+	display: block;
+}
+	
