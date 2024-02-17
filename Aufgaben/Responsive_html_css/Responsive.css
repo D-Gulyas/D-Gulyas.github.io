@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 60px 100px 20px;
+}
+
+.menu-list {
+    float: right;
+}
+
+.menu-list li {
+    display: inline-block;
+    padding: 40px;
+    margin: 25px 30px;
+}
+
+/* Burger-Menü */
+.burger-menu {
+    display: none; 
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.burger-menu-bar {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin: 6px 0;
+}
+
+.nav-container {
+    position: relative; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; /
+    padding: 10px; 
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+.menu-list li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-list li a:hover {
+    background-color: #eee;
+}
+
+.dog {
+    height: 150px;
+}
+
+header h1 {
+    margin: 100px 0;
+}
+
+.round-white-box {
+    margin-bottom: 80px; 
+}
+
+.main-flexbox {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-between;
+}
+
+.main-textbox {
+    flex: 0 0 calc(50% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px; 
+    box-sizing: border-box; 
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.main-textbox h3,
+.main-textbox p {
+    margin: 0;
+}
+
+.main-button {
+    display: inline-block;
+    padding: 11px 0px;
+    text-align: center;
+    width: 340px;
+    margin: 20px 0;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Media Query für die Anzeige des Burger-Menüs ab 1280px */
+@media screen and (max-width: 1280px) {
+    /* Normale Navigation ausblenden */
+    .menu-list {
+        display: none;
+    }
+
+    /* Burger-Menü anzeigen */
+    .burger-menu {
+        display: block;
+    }
+}
