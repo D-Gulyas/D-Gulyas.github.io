@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dennis Gulyas">
+    
+    <title>Mythologie</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.jpg">
+
+<style>
+
+    body{
+            background-color: black;
+    }
+
+    .container{
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 10%;
+            text-align: center;
+    }
+
+    h1 {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100px;
+            animation: schweben 2s infinite linear;       
+    }
+
+    p{
+            font-size: 1.5em;
+            line-height: 1.5;
+            color: white;
+    }
+
+    .flexbox-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 2em;
+    }
+
+    .flexbox-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+            margin: 1em;
+            margin-top: 10%;
+            padding: 1em;
+            border: 1px solid rgb(240, 240, 11);
+            border-radius: 5px;
+    }
+
+    .flexbox-item img{
+            width: 150px;
+            height: 150px;
+            margin-bottom: 5em;
+            animation: schweben 2s infinite linear;
+    }
+
+    .flexbox-item:hover {
+            transform: translateY(-20px);
+            box-shadow: 0 0 20px rgb(240, 240, 11);
+    }
+
+    .flexbox-item-1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+            margin: 1em;
+            margin-top: 10%;
+            padding: 1em;
+            border: 1px solid rgb(240, 240, 11);
+            border-radius: 5px;
+    }
+
+    .flexbox-item-1 img{
+            width: 220px;
+            height: 400px;
+            margin-bottom: 5em;
+            animation: schweben 2s infinite linear;
+    }
+
+    .flexbox-item-1:hover {
+            transform: translateY(50px);
+            box-shadow: 0 0 20px rgb(240, 240, 11);
+    }
+
+    .text{
+            margin-top: -57%;
+    }
+
+    
+        
+</style>
+
+</head>
+<body>
+    <nav class="button"> 
+        <a href="homepage.html"> <img src="startseite_logo.png" alt="startseite_logo"></a>
+        
+        <ul>
+            <li data-text="startseite">     <a                href="startseite.html"    >Startseite     </a></li>
+            <li data-text="götter">         <a                href="götter.html"        >Götter         </a></li>
+            <li data-text="schöpfung">      <a                href="schöpfung.html"     >Schöpfung      </a></li>
+            <li data-text="jenseits">       <a                href="jenseits.html"      >Jenseits       </a></li>
+            <li data-text="mythologie">     <a class="active" href="mythologie.html"    >Mythologie     </a></li>
+            <li data-text="hieroglyphen">   <a                href="hieroglyphen.html"  >Hieroglyphen   </a></li>
+        </ul>
+
+    </nav>
+
+    <div class="container">
+
+        <h1 style="background-image: url('Mythologie.png');" alt="Überschrift mit Bild"></h1>
+        <br>
+        <br>
+        <p>
+            Tauche ein in die Symbolik der ägyptischen Mythologie, in der jedes Tier und jedes<br>
+            Symbol eine tiefere Bedeutung trägt. Der majestätische Skarabäus repräsentiert<br> 
+            nicht nur Wiedergeburt, sondern auch die aufgehende Sonne, während die Schlange<br> 
+            Apep die chaotischen Kräfte symbolisiert, gegen die die Götter kämpfen. Entdecke<br> 
+            die Geschichten hinter den Tierwesen wie dem krokodilköpfigen Gott Sobek und enthülle,<br>
+            wie diese Wesen in Kunst, Architektur und Religion verankert sind, um die Macht und<br>
+            die Mysterien der ägyptischen Mythologie zu verdeutlichen.
+        </p>
+
+
+        <div class="flexbox-container">
+          
+            <div class="flexbox-item">
+                <img src="skarabäus.png" alt="Bild 1">
+                <p>
+                    Der Skarabäus, oft als heiliger Käfer verehrt, symbolisierte im alten Ägypten<br>
+                    die Kraft der Wiedergeburt und die Zyklen des Lebens. Mit seiner Fähigkeit,<br> 
+                    sich aus dem Kotballen zu befreien, verkörperte der Skarabäus die Idee der<br> 
+                    Erneuerung und des ewigen Kreislaufs von Geburt, Tod und Wiedergeburt. Er wurde<br> 
+                    auch als Schutzsymbol gegen das Böse angesehen und oft als Schmuckstück oder<br> 
+                    Amulett getragen.
+                </p>
+            </div>
+
+
+          <div class="flexbox-item-1">
+
+                <img src="apep.png" alt="Bild 2">
+                <p class="text">
+                    Apep, auch bekannt als Apophis, war die Verkörperung des Chaos und der Zerstörung<br>
+                    in der ägyptischen Mythologie. Als riesige Schlange, die in der Duat, der<br> 
+                    ägyptischen Unterwelt, lauerte, versuchte Apep, die Sonnenbarke des Gottes Ra<br> 
+                    während ihrer nächtlichen Reise durch die Unterwelt zu verschlingen. Die Priester<br>
+                    und Gläubigen führten Rituale und Beschwörungen durch, um Apep zu bekämpfen und<br> 
+                    die Ordnung des Kosmos aufrechtzuerhalten.
+                </p>
+          </div>
+
+
+          <div class="flexbox-item">
+
+                <img src="sobek.png" alt="Bild 3">
+                <p>
+                    Sobek, mit dem Kopf eines Krokodils und dem Körper eines Menschen, war ein mächtiger<br>
+                    Gott, der mit den Wassern und Fruchtbarkeitsaspekten des Nils verbunden war. Er<br> 
+                    wurde oft als Beschützer der Pharaonen und des ägyptischen Volkes verehrt, da<br> 
+                    Krokodile als Symbole für Stärke und königliche Macht galten. Als Gott der Flüsse<br> 
+                    und Seen spielte Sobek eine wichtige Rolle im ägyptischen Leben, sowohl in<br> 
+                    landwirtschaftlichen Belangen als auch in religiösen Ritualen, die auf die<br> 
+                    Fruchtbarkeit des Nils abzielten.
+                </p>
+          </div>
+
+
+        </div>
+
+
+
+    </div>
+
+</body>
+</html>
