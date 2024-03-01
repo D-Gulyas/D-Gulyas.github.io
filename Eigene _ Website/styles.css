@@ -141,14 +141,17 @@ footer {
     footer.responsive {
         flex-direction: column;
         align-items: center;
-}
+
+    }
 
     footer.responsive .footer-column {
         flex: 1 0 100%; 
         margin: 10px 0;
-}
+
+    }
 
     footer.responsive .footer-column h2 {
         text-align: center;
-}
+
+    }
 }
