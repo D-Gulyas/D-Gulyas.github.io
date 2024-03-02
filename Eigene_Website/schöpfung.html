@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dennis Gulyas">
+    
+    <title>Schöpfung</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/Bilder/icon.jpg">
+
+<style>
+
+    body{
+            background-color: black;
+    }
+
+    .container{
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 10%;
+            text-align: center;
+    }
+
+    h1 {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100px;
+            margin-top: 250px;
+            animation: schweben 2s infinite linear;       
+    }
+
+    p{
+            font-size: 1.5em;
+            line-height: 1.5;
+            color: white;
+    }
+
+    .flexbox-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2em;
+    }
+
+    .flexbox-item-1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            margin: 1em;
+            margin-top: 10%;
+            padding: 1em;
+            border: 1px solid rgb(240, 240, 11);
+            border-radius: 10px;
+    }
+
+    .flexbox-item-1 img{
+            width: 100%;
+            height: auto;
+            max-width: 700px;
+            margin-bottom: -1em;
+            animation: schweben 2s infinite linear;
+    }
+
+    .flexbox-item-1:hover {
+            transform: translateY(-20px);
+            box-shadow: 0 0 60px rgb(224, 7, 7);
+            cursor: none;
+    }
+
+    .flexbox-item-2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            margin: 1em;
+            margin-top: 10%;
+            padding: 1em;
+            border: 1px solid rgb(240, 240, 11);
+            border-radius: 10px;
+    }
+
+    .flexbox-item-2 img{
+            width: 100%;
+            height: auto;
+            max-width: 700px;
+            margin-bottom: -1em;
+            animation: schweben 2s infinite linear;
+    }
+
+    .flexbox-item-2:hover {
+            transform: translateY(-20px);
+            box-shadow: 0 0 60px rgb(240, 239, 239);
+            cursor: none;
+    }
+
+@media (max-width: 1038px) {
+        .container {
+                width: 90%;
+        }
+
+        .flexbox-container {
+                flex-direction: column;
+        }
+
+        .flexbox-item-1,
+        .flexbox-item-2 {
+                max-width: 500px;
+        }
+}
+
+@media (max-width: 400px) {
+        .h1 {
+                height: 50px;
+        }
+
+        .p {
+                font-size: 1em;
+        }
+
+        .flexbox-item-1 img,
+        .flexbox-item-2 img {
+                max-width: 300px;
+        }
+        
+}
+
+
+</style>
+</head>
+
+
+<body>
+    <nav> 
+        <a href="homepage.html"> <img src="Bilder/startseite_logo.png" alt="startseite_logo"></a>
+        
+        <ul class="responsive-nav">
+            <li data-text="startseite">     <a                href="startseite.html"    >Startseite     </a></li>
+            <li data-text="götter">         <a                href="götter.html"        >Götter         </a></li>
+            <li data-text="schöpfung">      <a class="active" href="schöpfung.html"     >Schöpfung      </a></li>
+            <li data-text="jenseits">       <a                href="jenseits.html"      >Jenseits       </a></li>
+            <li data-text="mythologie">     <a                href="mythologie.html"    >Mythologie     </a></li>
+            <li data-text="hieroglyphen">   <a                href="hieroglyphen.html"  >Hieroglyphen   </a></li>
+        </ul>
+
+    </nav>
+
+
+    <div class="container">
+        <h1 style="background-image: url('Bilder/Schoepfung.png');" alt="Schöpfung Schriftzug"></h1>
+        <br>
+        <br>
+        <p>
+            Reise durch die Zeit zurück zu den Ursprüngen des ägyptischen Kosmos und erforsche die<br>
+            faszinierenden Schöpfungsmythen, die die Grundlagen des Universums erklären. Der<br> 
+            mythische Kampf zwischen Licht und Dunkelheit, Leben und Tod, manifestiert sich in<br> 
+            Erzählungen von göttlichen Intrigen und Opfern. Jeder Mythos trägt eine einzigartige<br> 
+            Perspektive auf die Entstehung des Lebens und bietet Einblicke in die komplexen<br> 
+            Überzeugungen der alten Ägypter über den Sinn und Zweck der Existenz.
+        </p>
+      
+
+        <div class="flexbox-container">
+
+          <div class="flexbox-item-1">
+            <img src="Bilder/sonne.png" alt="Sonne">
+            <p>
+                In der ägyptischen Mythologie steht das Licht oft für Ordnung, Schöpfung, Leben<br>
+                und Erneuerung. Es wird mit dem Sonnengott Ra in Verbindung gebracht, der die<br> 
+                Sonne und das Licht symbolisiert. Das Licht steht auch für Wissen, Wahrheit und<br> 
+                spirituelle Erleuchtung. Die aufgehende Sonne galt als Symbol für Hoffnung und<br> 
+                Auferstehung, während die Strahlen der Sonne die dunklen Ecken der Welt erhellen<br> 
+                und das Böse vertreiben.
+            </p>
+          </div>
+      
+
+          <div class="flexbox-item-2">
+
+            <img src="/Bilder/mond.png" alt="Mond">
+            <p>
+                Dunkelheit hingegen repräsentiert in der ägyptischen Mythologie das Chaotische,<br>
+                das Unbekannte und das Bedrohliche. Es wird oft mit der Nacht, der Unterwelt und<br>
+                den Kräften der Zerstörung in Verbindung gebracht. Der Gott Seth wird oft mit<br>
+                Dunkelheit und Chaos assoziiert, da er in einigen Mythen als Feind des Lichts<br> 
+                und der Ordnung auftritt. Die Dunkelheit steht auch für Ignoranz, Lügen und den<br> 
+                Verlust des spirituellen Weges.
+            </p>
+          </div>
+
+
+        </div>
+
+
+
+    </div>
+      
+</body>
+</html>
